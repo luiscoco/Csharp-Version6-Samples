@@ -18,7 +18,7 @@ Projects included:
 
 ---
 
-## 🚀 Key Features & Examples
+## Key Features & Examples
 
 ### P78_StringInterpolation_Nameof - String Interpolation & `nameof`
 ```csharp
@@ -57,13 +57,13 @@ public string Name => _name;
 public override string ToString() => $"{Name}";
 ```
 
-### 6) Auto‑property initializers (`P79_AutoPropertyInitializers`)
+### P83_AutoPropertyInitializers
 ```csharp
 public string Name { get; set; } = "Unknown";
 public int Count { get; } = 0;
 ```
 
-### 7) Index / collection initializers (`P80_IndexInitializers`)
+### P84_IndexInitializers
 ```csharp
 var dict = new Dictionary<string,int>
 {
@@ -72,20 +72,20 @@ var dict = new Dictionary<string,int>
 };
 ```
 
-### 8) `await` in `catch` / `finally` (`P81_AwaitInCatchFinally`)
+### P85_AwaitInCatchFinally
 ```csharp
 try { /* ... */ }
 catch (Exception ex) { await LogAsync(ex); }
 finally { await CleanupAsync(); }
 ```
 
-### 9) Interpolation alignment/format (`P82_InterpolationAlignmentFormat`)
+### P86_InterpolationAlignmentFormat
 ```csharp
 int value = 42;
 Console.WriteLine($"Value: {value,10:D4}");
 ```
 
-### 10) Null‑conditional with events (`P83_UsingNullConditionalWithEvents`)
+### P87_UsingNullConditionalWithEvents
 ```csharp
 EventHandler handler = SomethingHappened;
 handler?.Invoke(this, EventArgs.Empty);
@@ -93,7 +93,7 @@ handler?.Invoke(this, EventArgs.Empty);
 
 ---
 
-## ▶ How to build & run
+## How to build & run
 
 From repo root:
 ```bash
@@ -104,7 +104,7 @@ dotnet run --project P74_StringInterpolation_Nameof
 
 ---
 
-## ⚙ Why These Matter
+## Why These Matter
 
 C# 6 polished the language with:
 
