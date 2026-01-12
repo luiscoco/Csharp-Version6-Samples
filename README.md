@@ -1,4 +1,4 @@
-# C# 6.0 Features – Sample Projects
+# C# 6.0 Features - Sample Projects
 
 These projects show the language features introduced in **C# version 6.0**.  
 Each sample is simple and illustrates a particular syntax enhancement.
