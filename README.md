@@ -5,35 +5,35 @@ Each sample is simple and illustrates a particular syntax enhancement.
 
 Projects included:
 
-- `P74_StringInterpolation_Nameof` — String interpolation & `nameof`  
-- `P75_NullConditional` — Null‑conditional operator (`?.`, `?[]`)  
-- `P76_ExceptionFilters` — `catch (Ex) when (...)` filters  
-- `P77_UsingStatic` — `using static` to import static members  
-- `P78_ExpressionBodied` — Expression‑bodied methods & read‑only properties  
-- `P79_AutoPropertyInitializers` — Auto‑property initializers (including get‑only)  
-- `P80_IndexInitializers` — Index & collection initializers  
-- `P81_AwaitInCatchFinally` — `await` in `catch` and `finally` blocks  
-- `P82_InterpolationAlignmentFormat` — Alignment / format specifiers in interpolations  
-- `P83_UsingNullConditionalWithEvents` — Safe event invocation using `?.` / null conditional  
+- `P78_StringInterpolation_Nameof` — String interpolation & `nameof`  
+- `P79_NullConditional` — Null‑conditional operator (`?.`, `?[]`)  
+- `P80_ExceptionFilters` — `catch (Ex) when (...)` filters  
+- `P81_UsingStatic` — `using static` to import static members  
+- `P82_ExpressionBodied` — Expression‑bodied methods & read‑only properties  
+- `P83_AutoPropertyInitializers` — Auto‑property initializers (including get‑only)  
+- `P84_IndexInitializers` — Index & collection initializers  
+- `P85_AwaitInCatchFinally` — `await` in `catch` and `finally` blocks  
+- `P86_InterpolationAlignmentFormat` — Alignment / format specifiers in interpolations  
+- `P87_UsingNullConditionalWithEvents` — Safe event invocation using `?.` / null conditional  
 
 ---
 
 ## 🚀 Key Features & Examples
 
-### 1) String Interpolation & `nameof` (`P74_StringInterpolation_Nameof`)
+### P78_StringInterpolation_Nameof - String Interpolation & `nameof`
 ```csharp
 string name = "Alice";
 Console.WriteLine($"Welcome, {name}");
 Console.WriteLine(nameof(name)); // "name"
 ```
 
-### 2) Null‑conditional operator (`P75_NullConditional`)
+### P79_NullConditional - Null‑conditional operator
 ```csharp
 Person p = null;
 int? len = p?.Name?.Length;
 ```
 
-### 3) Exception filters (`P76_ExceptionFilters`)
+### P80_ExceptionFilters - Exception filters
 ```csharp
 try
 {
@@ -45,13 +45,13 @@ catch (IOException ex) when (ex.Message.Contains("file not found"))
 }
 ```
 
-### 4) `using static` imports (`P77_UsingStatic`)
+### P81_UsingStatic - using static
 ```csharp
 using static System.Console;
 WriteLine("Hello"); // no Console prefix needed
 ```
 
-### 5) Expression‑bodied members (`P78_ExpressionBodied`)
+### P82_ExpressionBodied
 ```csharp
 public string Name => _name;
 public override string ToString() => $"{Name}";
